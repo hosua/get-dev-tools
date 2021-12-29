@@ -8,9 +8,9 @@ cmd /c winget install -e --id Mozilla.Firefox
 
 @echo Opening firefox plugin URLs
 
-cmd /c "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"
-cmd /c "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"
-cmd /c "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/"
+"C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"
+"C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"
+"C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/"
 
 @echo Installing Git
 cmd /c winget install --id Git.Git -e --source winget
