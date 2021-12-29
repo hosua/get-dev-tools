@@ -1,7 +1,7 @@
+@echo off
 @echo Press enter to start getting dev-tools
 @echo Before running, make sure winget (app installer) is installed from the Microsoft store.
 @echo Make sure you're running this in administrator mode, or oaths won't be added.
-
 pause
 
 @echo Installing Firefox
@@ -13,7 +13,9 @@ cmd /c winget install -e --id Mozilla.Firefox
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/"
 
-@echo Installing Git
+:: Maybe add a yes/no prompt for each program being installed 
+   
+echo Installing Git
 cmd /c winget install --id Git.Git -e --source winget
 @echo Installing wget
 cmd /c winget install -e --id GnuWin32.Wget
@@ -29,9 +31,9 @@ cmd /c winget install -e --id vim.vim
 @echo Adding vim, vscode and msys2 to PATH
 cmd /c setx /M path "%path%;C:\msys64\mingw64\bin;C:\Program Files\Vim\vim82;C:\Program Files (x86)\Vim\vim82;C:\Users\Hos\AppData\Local\Programs\Microsoft VS Code;"
 
-@echo Installation complete, before closing this 
-@echo Open MSYS2 MSYS, then copy & paste this command in. 
+@echo Installation complete, but before closing this window,
+@echo open MSYS2 MSYS, then copy & paste this command in and run it. 
 @echo pacman -S --needed base-devel mingw-w64-x86_64-toolchain
-@echo After this, everything should be working.
+@echo After this, open a new cmd/powershell and confirm everything is working with g++ --version and vim --version 
 pause
 
