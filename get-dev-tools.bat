@@ -22,10 +22,8 @@ cmd /c winget install -e --id vim.vim
 cmd /c setx /M path "%path%;C:\msys64\mingw64\bin;C:\Program Files\Vim\vim82;C:\Program Files (x86)\Vim\vim82;"
 
 @echo Installation complete, before closing this 
-@echo 1) Open MSYS2 MSYS
-@echo 2) pacman -Syu
-@echo 3) Open MSYS2 MSYS again
-@echo 4) pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+@echo 1) Open MSYS2 MSYS 
+@echo 2) pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 @echo After this, everything should be working.
 pause
 
