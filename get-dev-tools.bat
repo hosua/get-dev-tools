@@ -1,6 +1,8 @@
 @echo Press enter to start getting dev-tools
 pause
 
+@echo Installing Firefox
+cmd /c winget install -e --id Mozilla.Firefox
 @echo Installing Git
 cmd /c winget install --id Git.Git -e --source winget
 @echo Installing wget
