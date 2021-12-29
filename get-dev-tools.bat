@@ -9,6 +9,7 @@ cmd /c winget install -e --id Mozilla.Firefox
 @echo Opening firefox plugin URLs
 
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"
+"C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-firefox/"
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/"
 
