@@ -13,7 +13,8 @@ cmd /c winget install -e --id Mozilla.Firefox
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"
 "C:\Program Files\Mozilla Firefox\firefox" "https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/"
 
-:: Maybe add a yes/no prompt for each program being installed 
+:: Maybe add a yes/no prompt for each program being installed? Batch is kinda shitty and makes it annoying to do
+:: though so fuck that.
    
 echo Installing Git
 cmd /c winget install --id Git.Git -e --source winget
@@ -30,6 +31,8 @@ cmd /c winget install -e --id vim.vim
 
 @echo Adding vim, vscode and msys2 to PATH
 cmd /c setx /M path "%path%;C:\msys64\mingw64\bin;C:\Program Files\Vim\vim82;C:\Program Files (x86)\Vim\vim82;C:\Users\Hos\AppData\Local\Programs\Microsoft VS Code;"
+
+C:\msys64\msys2.exe
 
 @echo Installation complete, but before closing this window,
 @echo open MSYS2 MSYS, then copy & paste this command in and run it. 
