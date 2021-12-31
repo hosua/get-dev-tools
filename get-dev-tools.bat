@@ -32,6 +32,7 @@ cmd /c winget install -e --id vim.vim
 @echo Adding vim, vscode and msys2 to PATH
 cmd /c setx /M path "%path%;C:\msys64\mingw64\bin;C:\Program Files\Vim\vim82;C:\Program Files (x86)\Vim\vim82;C:\Users\Hos\AppData\Local\Programs\Microsoft VS Code;"
 
+@echo Deleting unwanted shortcuts
 del %PUBLIC%\Desktop\*Edge*
 del %PUBLIC%\Desktop\*gVim*
 del %USERPROFILE%\Desktop\*gVim*
