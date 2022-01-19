@@ -1,7 +1,7 @@
 @echo off
 @echo Press enter to start getting dev-tools
 @echo Before running, make sure winget (app installer) is installed from the Microsoft store.
-@echo Make sure you're running this in administrator mode, or oaths won't be added.
+@echo Make sure you're running this in administrator mode, or paths won't be added.
 pause
 
 @echo Installing Firefox
