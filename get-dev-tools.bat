@@ -40,6 +40,7 @@ del %USERPROFILE%\Desktop\*gVim*
 C:\msys64\msys2.exe
 
 @echo If msys2 msys didn't open by itself, open it now.
+@echo Enter the command below into the msys2 terminal.
 @echo pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 @echo After this is complete, you are finished. Reopen a cmd/powershell and confirm g++ --version and vim --version both work
 pause
